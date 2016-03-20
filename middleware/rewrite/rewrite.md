@@ -16,7 +16,8 @@ rewrite from to
 If from *and* to look like a DNS type (`A`, `MX`, etc.) the type of the message will be rewriten,
 i.e. to rewrite ANY queries to HINFO, use `rewrite ANY HINFO`.
 
-If it does not look like a type a name is assumed and the qname in the message is rewritten.
+If it does not look like a type a name is assumed and the qname in the message is rewritten, this
+needs to be a full match of the name `rewrite miek.nl example.org`.
 
 Advanced users may open a block and make a complex rewrite rule:
 
